@@ -1,0 +1,105 @@
+:root {
+  --primary: #d2ee7f;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "Noto Sans Mono", monospace;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  height: 100%;
+  padding: 0 3rem;
+}
+
+button {
+  background-color: transparent;
+  border: 0;
+  font-family: "Noto Sans Mono", monospace;
+  outline: 1px solid transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    list-style-type: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}
+
+#main-page {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-wrap: balance;
+
+  h1 {
+    font-size: 3rem;
+    font-weight: 500;
+    margin: 0;
+  }
+
+  .action-footer {
+    display: flex;
+    flex-direction: none;
+    gap: 16px;
+  }
+
+  .btn-shop-now {
+    background-color: var(--primary);
+    padding: 8px 12px;
+  }
+
+  .btn-shop-now:hover {
+    outline: 1px solid var(--primary);
+    background-color: transparent;
+  }
+
+  .btn-show-reel {
+    padding: 8px 12px;
+    text-decoration: underline;
+  }
+
+  .btn-show-reel:hover {
+    background-color: var(--primary);
+  }
+
+  .hero-container {
+    position: relative;
+
+    p {
+      position: absolute;
+      bottom: 0;
+      padding-left: 16px;
+      color: white;
+    }
+  }
+
+  img {
+    width: 18rem;
+    height: 20rem;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1),
+      0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  }
+}
